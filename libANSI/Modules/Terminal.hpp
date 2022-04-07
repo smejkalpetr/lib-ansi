@@ -1,0 +1,42 @@
+//
+//  Terminal.hpp
+//  libANSI
+//
+//  Created by Petr Šmejkal on 07.04.2022.
+//
+
+#ifndef Terminal_hpp
+#define Terminal_hpp
+
+#include <iostream>
+#include <stdlib.h>
+
+#include "Enums/Color.hpp"
+#include "Enums/BrightColor.hpp"
+
+class Terminal {
+public:
+    void rawMode();
+    void cookedMode();
+    
+    void resize(int w, int h);
+    void minimize();
+    void maximize();
+    
+    void clearLine();
+    void clearLineToBeggining();
+    void clearLineToEnd();
+    
+    void clearScreen();
+    void clearScreenToBeggining();
+    void clearScreenToEnd();
+    
+    void backgroundColor(COLOR color);
+    void backgroundColor(BRIGHT_COLOR color);
+    void backgroundColor(int color_code);
+    
+    void reset();
+private:
+};
+
+#endif /* Terminal_hpp */
