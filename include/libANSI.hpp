@@ -8,8 +8,8 @@
 #ifndef libANSI_h
 #define libANSI_h
 
-#include "Modules/Terminal.hpp"
-#include "Modules/Cursor.hpp"
-#include "Modules/Text.hpp"
+#include "../src/Modules/Terminal.hpp"
+#include "../src/Modules/Cursor.hpp"
+#include "../src/Modules/Text.hpp"
 
 #endif /* libANSI_h */
