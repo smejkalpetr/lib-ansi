@@ -7,21 +7,21 @@
 
 #include "Text.hpp"
 
-void Text::print(std::string text) {
+void libANSI::Text::print(std::string text) {
     for (const auto & modifier: this->modifiers)
         std::cout << modifier;
     
     std::cout << text;
 }
 
-void Text::print(const char * text) {
+void libANSI::Text::print(const char * text) {
     for (const auto & modifier: this->modifiers)
         std::cout << modifier;
     
     std::cout << text;
 }
 
-void Text::printOnPosition(int x, int y, std::string text) {
+void libANSI::Text::printOnPosition(int x, int y, std::string text) {
     for (const auto & modifier: this->modifiers)
         std::cout << modifier;
     
@@ -29,66 +29,74 @@ void Text::printOnPosition(int x, int y, std::string text) {
     std::cout << text;
 }
 
-void Text::eraseCurrentLine() {
+void libANSI::Text::clearLine() {
     
 }
 
-void Text::color(COLOR color) {
+void libANSI::Text::clearLineToBeggining() {
     
 }
 
-void Text::color(BRIGHT_COLOR color) {
+void libANSI::Text::clearLineToEnd() {
     
 }
 
-void Text::color(int color_code) {
+void libANSI::Text::color(COLOR color) {
     
 }
 
-void Text::colorReset() {
+void libANSI::Text::color(BRIGHT_COLOR color) {
     
 }
 
-void Text::backgroundColor(COLOR color) {
+void libANSI::Text::color(int color_code) {
     
 }
 
-void Text::backgroundColor(BRIGHT_COLOR color) {
+void libANSI::Text::colorReset() {
     
 }
 
-void Text::backgroundColor(int color_code) {
+void libANSI::Text::backgroundColor(COLOR color) {
     
 }
 
-void Text::standard() {
+void libANSI::Text::backgroundColor(BRIGHT_COLOR color) {
     
 }
 
-void Text::bold() {
+void libANSI::Text::backgroundColor(int color_code) {
     
 }
 
-void Text::underline() {
+void libANSI::Text::standard() {
     
 }
 
-void Text::blink() {
+void libANSI::Text::bold() {
     
 }
 
-void Text::crossedOut() {
+void libANSI::Text::underline() {
     
 }
 
-void Text::hide() {
+void libANSI::Text::blink() {
     
 }
 
-void Text::show() {
+void libANSI::Text::crossedOut() {
     
 }
 
-void Text::reset() {
+void libANSI::Text::hide() {
+    
+}
+
+void libANSI::Text::show() {
+    
+}
+
+void libANSI::Text::reset() {
     this->modifiers.clear();
 }

@@ -7,15 +7,15 @@
 
 #include "Terminal.hpp"
 
-void Terminal::rawMode() {
+void libANSI::Terminal::rawMode() {
     std::system("stty raw");
 }
 
-void Terminal::cookedMode() {
+void libANSI::Terminal::cookedMode() {
     system("stty cooked");
 }
 
-void Terminal::resize(int w, int h) {
+void libANSI::Terminal::resize(int w, int h) {
     std::string code =  std::string("\e[8;") +
                         std::to_string(h) +
                         std::string(";") +
@@ -25,30 +25,54 @@ void Terminal::resize(int w, int h) {
     std::cout << code;
 }
 
-void Terminal::clearLine() {
-    
+void libANSI::Terminal::minimize() {
+    std::cout << "\e[2t";
 }
 
-void Terminal::clearLineToBeggining() {
-    
+void libANSI::Terminal::maximize() {
+    std::cout << "\e[1t";
+}
+        
+void libANSI::Terminal::clearScreen() {
+    std::cout << "\u001b[2J";
 }
 
-void Terminal::clearLineToEnd() {
-    
+void libANSI::Terminal::clearScreenToBeggining() {
+    std::cout << "\u001b[1J";
 }
 
-void Terminal::backgroundColor(COLOR color) {
-    
+void libANSI::Terminal::clearScreenToEnd() {
+    std::cout << "\u001b[0J";
 }
 
-void Terminal::backgroundColor(BRIGHT_COLOR color) {
+void libANSI::Terminal::backgroundColor(COLOR color) {
+    std::string code =  "\033[" +
+                        std::to_string(color + 10) +
+                        "m";
     
+    std::cout << code;
+    
+    this->clearScreen();
 }
 
-void Terminal::backgroundColor(int color_code) {
+void libANSI::Terminal::backgroundColor(BRIGHT_COLOR color) {
+    std::string code =  "\033[" +
+                        std::to_string(color + 10) +
+                        ";1m";
     
+    std::cout << code;
+    this->clearScreen();
 }
 
-void Terminal::reset() {
+void libANSI::Terminal::backgroundColor(int color_code) {
+    std::string code =  "u001b[38;5;" +
+                        std::to_string(color_code) +
+                        "m";
     
+    std::cout << code;
+    this->clearScreen();
+}
+
+void libANSI::Terminal::reset() {
+    std::cout << "\u001b[0m";
 }
