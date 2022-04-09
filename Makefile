@@ -32,6 +32,10 @@ Text.o: $(MODUELS)Text.cpp $(MODUELS)Text.hpp
 	
 run:
 	$(BIN)/libANSI
+	
+doc:
+	mkdir -p doc;
+	doxygen ./Doxyfile;
 
 clean:
 	rm -rf $(BIN);

@@ -16,7 +16,6 @@ namespace libANSI {
     public:
         void moveToPosition(int x, int y);
         void moveToColumn(int x);
-        
         void moveUp();
         void moveDown();
         void moveRight();
