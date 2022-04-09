@@ -11,8 +11,8 @@
 #include <iostream>
 #include <stdlib.h>
 
-#include "Enums/Color.hpp"
-#include "Enums/BrightColor.hpp"
+#include "../Enums/Color.hpp"
+#include "../Enums/BrightColor.hpp"
 
 namespace libANSI {
     class Terminal {

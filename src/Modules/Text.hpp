@@ -12,8 +12,8 @@
 #include <string>
 #include <vector>
 
-#include "Enums/Color.hpp"
-#include "Enums/BrightColor.hpp"
+#include "../Enums/Color.hpp"
+#include "../Enums/BrightColor.hpp"
 
 namespace libANSI {
     class Text {

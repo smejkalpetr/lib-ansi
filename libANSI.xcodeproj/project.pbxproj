@@ -91,7 +91,6 @@
 				1DBAA01827FF1F5200E27F90 /* Cursor.cpp */,
 				1DBAA01C27FF1F5A00E27F90 /* Text.hpp */,
 				1DBAA01B27FF1F5A00E27F90 /* Text.cpp */,
-				1DBAA01227FF1F1D00E27F90 /* Enums */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -108,6 +107,7 @@
 		1DDB3B732800E0C70098129D /* src */ = {
 			isa = PBXGroup;
 			children = (
+				1DBAA01227FF1F1D00E27F90 /* Enums */,
 				1DBAA01127FF1F0B00E27F90 /* Modules */,
 			);
 			path = src;
