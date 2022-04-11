@@ -14,9 +14,23 @@
 #include "CursorTests.hpp"
 #include "TextTests.hpp"
 
-int main(int argc, const char * argv[]) {   
-    std::cout << "TERMINAL MODULE TESTING:" << std::endl;
-    TerminalTests();
+int main(int argc, const char * argv[]) {
+//    libANSI::Terminal t;
+//    t.cookedMode();
+
+    
+//    std::cout << "\033[3;3H";
+//    std::cout << "\033[s";
+//    std::cout << "Hello world";
+//    std::cout << "\033[u";
+//    std::cout << "Guten tag";
+//    std::cout << std::endl;s
+//    std::cout.flush();
+    
+//    for(;;){}
+    
+//    std::cout << "TERMINAL MODULE TESTING:" << std::endl;
+//    TerminalTests();
     
     std::cout << "CURSOR MODULE TESTING:" << std::endl;
     CursorTests();

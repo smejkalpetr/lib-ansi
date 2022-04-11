@@ -8,13 +8,14 @@
 #include "Cursor.hpp"
 
 void libANSI::Cursor::moveToPosition(int x, int y) {
-    std::string code =  "\u001b[" +
+    std::string code =  "\033[" +
                         std::to_string(y) +
                         ";" +
                         std::to_string(x) +
                         "H";
-    
+
     std::cout << code;
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveToColumn(int x) {
@@ -23,22 +24,27 @@ void libANSI::Cursor::moveToColumn(int x) {
                         "G";
     
     std::cout << code;
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveUp() {
-    std::cout << "\u001b[1A";
+    std::cout << "\033[1A";
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveDown() {
-    std::cout << "\u001b[1B";
+    std::cout << "\033[1B";
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveRight() {
-    std::cout << "\u001b[1C";
+    std::cout << "\033[1C";
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveLeft() {
-    std::cout << "\u001b[1D";
+    std::cout << "\033[1D";
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveUpByX(int x) {
@@ -46,6 +52,7 @@ void libANSI::Cursor::moveUpByX(int x) {
                         std::to_string(x) +
                         "A";
     std::cout << code;
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveDownByX(int x) {
@@ -53,6 +60,7 @@ void libANSI::Cursor::moveDownByX(int x) {
                         std::to_string(x) +
                         "B";
     std::cout << code;
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveRightByX(int x) {
@@ -60,6 +68,7 @@ void libANSI::Cursor::moveRightByX(int x) {
                         std::to_string(x) +
                         "C";
     std::cout << code;
+    std::cout.flush();
 }
 
 void libANSI::Cursor::moveLeftByX(int x) {
@@ -67,24 +76,30 @@ void libANSI::Cursor::moveLeftByX(int x) {
                         std::to_string(x) +
                         "D";
     std::cout << code;
+    std::cout.flush();
 }
 
 void libANSI::Cursor::savePosition() {
-    std::cout << "\033[s";
+//    std::cout << "\033[s"; // on Linux/Win terminals
+    std::cout << "\0337"; // on xTerm (MacOS terminal)
 }
 
 void libANSI::Cursor::restorePosition() {
-    std::cout << "\033[u";
+//    std::cout << "\033[u"; // on Linux/Win terminals
+    std::cout << "\0338"; // on xTerm (MacOS terminal)
 }
 
 void libANSI::Cursor::hide() {
     std::cout << "\033[?25l";
+    std::cout.flush();
 }
 
 void libANSI::Cursor::show() {
     std::cout << "\033[?25h";
+    std::cout.flush();
 }
 
 void libANSI::Cursor::reset() {
-    
+    this->show();
+    this->moveToPosition(0, 0);
 }

@@ -14,7 +14,7 @@ void TerminalTests() {
     
     // switches to raw mode
     t.rawMode();
-    std::cout << "The termnial was switched to \"raw mode\"" << std::endl;
+    std::cout << "The termnial was switched to \"raw mode\"";
     std::this_thread::sleep_for(std::chrono::seconds(1));
     
     // resizes the terminal window with giver width and heaight

@@ -8,35 +8,64 @@
 #include "CursorTests.hpp"
 
 void CursorTests() {
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+    
+    libANSI::Terminal t;
+    t.clearScreen();
+    
     // #[------------------------------------------------------------------------------------]# //
     // CURSOR MODULE TESTS:
     libANSI::Cursor c;
     
+    c.moveToPosition(30, 30);
+    c.savePosition();
+    std::cout << "<<-- MOVE TO (30,30)";
+    std::cout.flush();
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    c.restorePosition();
+    
+    t.clearScreen();
+    
     c.hide();
-    std::cout << "The cursor has been hidden for 3 seconds." << std::endl;
+    std::cout << "* hide ";
+    std::cout.flush();
     std::this_thread::sleep_for(std::chrono::seconds(3));
     
     c.show();
-    std::cout << "The cursor is now visible again!" << std::endl;
-    std::this_thread::sleep_for(std::chrono::seconds(1));
-    
-    c.moveToPosition(30, 50);
-    std::cout << "The cursor has been moved to (30,50)." << std::endl;
+    std::cout << "* show";
+    std::cout.flush();
     std::this_thread::sleep_for(std::chrono::seconds(3));
+    
+    t.clearScreen();
+
+    c.moveRight();
+    c.savePosition();
+    std::cout << "# RIGHT";
+    std::cout.flush();
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+    c.restorePosition();
     
     c.moveUp();
-    std::cout << "The cursor has been moved UP." << std::endl;
+    c.savePosition();
+    std::cout << "# UP";
+    std::cout.flush();
     std::this_thread::sleep_for(std::chrono::seconds(3));
+    c.restorePosition();
     
-    c.moveLeft();
-    std::cout << "The cursor has been moved LEFT." << std::endl;
+    c.moveLeftByX(15);
+    c.savePosition();
+    std::cout << "# LEFT BY 15";
+    std::cout.flush();
     std::this_thread::sleep_for(std::chrono::seconds(3));
+    c.restorePosition();
     
     c.moveDown();
-    std::cout << "The cursor has been moved DOWN." << std::endl;
+    c.savePosition();
+    std::cout << "# DOWN";
+    std::cout.flush();
     std::this_thread::sleep_for(std::chrono::seconds(3));
+    c.restorePosition();
     
-    c.moveRight();
-    std::cout << "The cursor has been moved RIGHT." << std::endl;
-    std::this_thread::sleep_for(std::chrono::seconds(3));
+    c.reset();
+    t.clearScreen();
 }
