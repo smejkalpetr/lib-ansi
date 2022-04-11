@@ -16,7 +16,7 @@ void libANSI::Terminal::cookedMode() {
 }
 
 void libANSI::Terminal::resize(int w, int h) {
-    std::string code =  std::string("\e[8;") +
+    std::string code =  std::string("\u001b[8;") +
                         std::to_string(h) +
                         std::string(";") +
                         std::to_string(w) +
@@ -26,11 +26,11 @@ void libANSI::Terminal::resize(int w, int h) {
 }
 
 void libANSI::Terminal::minimize() {
-    std::cout << "\e[2t";
+    std::cout << "\u001b[2t";
 }
 
 void libANSI::Terminal::maximize() {
-    std::cout << "\e[1t";
+    std::cout << "\u001b[1t";
 }
         
 void libANSI::Terminal::clearScreen() {

@@ -15,9 +15,13 @@
 #include "TextTests.hpp"
 
 int main(int argc, const char * argv[]) {
+    libANSI::Terminal t;
+    
     TerminalTests();
     CursorTests();
     TextTests();
+    
+    std::cout << "hello" << std::endl;
     
     return 0;
 }
