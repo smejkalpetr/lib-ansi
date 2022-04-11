@@ -1,56 +1,70 @@
 CXX = g++
 CXXFLAGS = -Wall -pedantic
 CPPFLAGS = -std=c++17
+LIB_STATIC_NAME = ANSI_static
 
 BIN = ./bin/
+BIN_TEST = ./bin/test/
 SRC = ./src/
 DOC = ./doc/
 TEST = ./test/
 INCLUDE = ./include/
-STATIC = ./bin/static/
-OBJECTS = ./bin/objects/
+STATIC = ./bin/static_lib_arch/
+OBJECTS_LIB = ./bin/objects/lib/
+OBJECTS_TEST =  ./bin/objects/test/
 MODUELS = ./src/Modules/
-LIB_STATIC_NAME = ANSI_static
 
+all: compile test doc
 
-all: compile
-
-
+##---- LIBRARY COMPILATION ----##
 compile: mkdir Terminal.o Cursor.o Text.o archive
 
 Terminal.o: $(MODUELS)Terminal.cpp $(MODUELS)Terminal.hpp
-	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(MODUELS)Terminal.cpp -o $(OBJECTS)Terminal.o
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(MODUELS)Terminal.cpp -o $(OBJECTS_LIB)Terminal.o
 	
 Cursor.o: $(MODUELS)Cursor.cpp $(MODUELS)Cursor.hpp
-	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(MODUELS)Cursor.cpp -o $(OBJECTS)Cursor.o
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(MODUELS)Cursor.cpp -o $(OBJECTS_LIB)Cursor.o
 	
 Text.o: $(MODUELS)Text.cpp $(MODUELS)Text.hpp
-	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(MODUELS)Text.cpp -o $(OBJECTS)Text.o
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(MODUELS)Text.cpp -o $(OBJECTS_LIB)Text.o
 	
 archive:
-	ar rcs $(STATIC)libANSI_static.a $(OBJECTS)*.o
+	ar rcs $(STATIC)libANSI_static.a $(OBJECTS_LIB)*.o
 
-run:
-	$(BIN)/libANSI
+##-----------------------------##
+##-- TESTS COMPILATION & RUN --##
+test: mkdir main.o TerminalTests.o CursorTests.o TextTests.o
+	$(CXX) $(OBJECTS_TEST)*.o $(CXXFLAGS) $(CPPFLAGS) -L$(STATIC) -l$(LIB_STATIC_NAME) -o $(BIN_TEST)test-exec
 
+main.o: $(TEST)main.cpp
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(TEST)main.cpp -o $(OBJECTS_TEST)main.o
+	
+TerminalTests.o: $(TEST)TerminalTests.cpp $(TEST)TerminalTests.hpp
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(TEST)TerminalTests.cpp -o $(OBJECTS_TEST)TerminalTests.o
+	
+CursorTests.o: $(TEST)CursorTests.cpp $(TEST)CursorTests.hpp
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(TEST)CursorTests.cpp -o $(OBJECTS_TEST)CursorTests.o
+	
+TextTests.o: $(TEST)TextTests.cpp $(TEST)TextTests.hpp
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(TEST)TextTests.cpp -o $(OBJECTS_TEST)TextTests.o
+	
+run_test:
+	$(BIN_TEST)/test-exec
 
-test: mkdir main.o
-	$(CXX) $(OBJECTS)main.o $(CXXFLAGS) $(CPPFLAGS) -L$(STATIC) -l$(LIB_STATIC_NAME) -o $(TEST)test-exec
-
-main.o: $(TEST)main.cpp $(INCLUDE)libANSI.hpp
-	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(TEST)main.cpp -o $(OBJECTS)main.o
-
-run:
-	$(TEST)/test-exec
-
+##-----------------------------##
+##- DOCUMENTATION  GENERATION -##
 doc:
 	mkdir -p doc;
 	doxygen ./Doxyfile;
 
+##-----------------------------##
+##--------- UTILITIES ---------##
 clean:
 	rm -rf $(BIN) $(DOC);
 
 mkdir:
 	mkdir -p $(BIN)
-	mkdir -p $(OBJECTS)
+	mkdir -p $(BIN_TEST)
+	mkdir -p $(OBJECTS_LIB)
+	mkdir -p $(OBJECTS_TEST)
 	mkdir -p $(STATIC)

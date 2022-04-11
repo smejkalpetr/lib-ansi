@@ -14,14 +14,15 @@
 #include "CursorTests.hpp"
 #include "TextTests.hpp"
 
-int main(int argc, const char * argv[]) {
-    libANSI::Terminal t;
-    
+int main(int argc, const char * argv[]) {   
+    std::cout << "TERMINAL MODULE TESTING:" << std::endl;
     TerminalTests();
-    CursorTests();
-    TextTests();
     
-    std::cout << "hello" << std::endl;
+    std::cout << "CURSOR MODULE TESTING:" << std::endl;
+    CursorTests();
+    
+    std::cout << "TEXT MODULE TESTING:" << std::endl;
+    TextTests();
     
     return 0;
 }
