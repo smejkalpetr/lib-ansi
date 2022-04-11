@@ -34,7 +34,6 @@
 		1DBAA00927FF1E5C00E27F90 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1DBAA01027FF1ED000E27F90 /* libANSI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = libANSI.hpp; sourceTree = "<group>"; };
 		1DBAA01327FF1F2A00E27F90 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Color.hpp; sourceTree = "<group>"; };
-		1DBAA01427FF1F3600E27F90 /* BrightColor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BrightColor.hpp; sourceTree = "<group>"; };
 		1DBAA01527FF1F4200E27F90 /* Terminal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Terminal.cpp; sourceTree = "<group>"; };
 		1DBAA01627FF1F4200E27F90 /* Terminal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Terminal.hpp; sourceTree = "<group>"; };
 		1DBAA01827FF1F5200E27F90 /* Cursor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cursor.cpp; sourceTree = "<group>"; };
@@ -99,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				1DBAA01327FF1F2A00E27F90 /* Color.hpp */,
-				1DBAA01427FF1F3600E27F90 /* BrightColor.hpp */,
 			);
 			path = Enums;
 			sourceTree = "<group>";

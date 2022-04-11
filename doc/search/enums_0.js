@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bright_5fcolor_128',['BRIGHT_COLOR',['../BrightColor_8hpp.html#a4f7cabb52a79788366cbaaf65986b3d7',1,'BrightColor.hpp']]]
+  ['color_130',['COLOR',['../Color_8hpp.html#af90824509586333cf45ce757d2711ce3',1,'Color.hpp']]]
 ];

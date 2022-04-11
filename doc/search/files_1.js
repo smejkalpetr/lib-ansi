@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['color_2ehpp_79',['Color.hpp',['../Color_8hpp.html',1,'']]],
-  ['cursor_2ecpp_80',['Cursor.cpp',['../Cursor_8cpp.html',1,'']]],
-  ['cursor_2ehpp_81',['Cursor.hpp',['../Cursor_8hpp.html',1,'']]]
+  ['terminal_2ecpp_81',['Terminal.cpp',['../Terminal_8cpp.html',1,'']]],
+  ['terminal_2ehpp_82',['Terminal.hpp',['../Terminal_8hpp.html',1,'']]],
+  ['text_2ecpp_83',['Text.cpp',['../Text_8cpp.html',1,'']]],
+  ['text_2ehpp_84',['Text.hpp',['../Text_8hpp.html',1,'']]]
 ];

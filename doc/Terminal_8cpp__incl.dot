@@ -12,6 +12,4 @@ digraph "src/Modules/Terminal.cpp"
   Node4 [label="stdlib.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="../Enums/Color.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Color_8hpp.html",tooltip=" "];
-  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="../Enums/BrightColor.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$BrightColor_8hpp.html",tooltip=" "];
 }

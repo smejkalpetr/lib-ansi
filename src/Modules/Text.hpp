@@ -12,8 +12,8 @@
 #include <string>
 #include <vector>
 
+#include "Cursor.hpp"
 #include "../Enums/Color.hpp"
-#include "../Enums/BrightColor.hpp"
 
 namespace libANSI {
     class Text {
@@ -28,27 +28,27 @@ namespace libANSI {
         
         // FONT MODIFIERS:
         void color(COLOR color);
-        void color(BRIGHT_COLOR color);
+        void brightColor(COLOR bright_color);
         void color(int color_code);
         void colorReset();
         
         void backgroundColor(COLOR color);
-        void backgroundColor(BRIGHT_COLOR color);
+        void backgroundBrightColor(COLOR bright_color);
         void backgroundColor(int color_code);
         void backgroundColorReset();
         
-        void standard(); // 10
-        void bold();
-        void underline();
-        void blink();
-        void crossedOut();
+        void standard();
+        void bold(bool is_turned_on = true);
+        void underline(bool is_turned_on = true);
+        void blink(bool is_turned_on = true);
+        void crossedOut(bool is_turned_on = true);
+        void reversed(bool is_turned_on = true);
         
         void hide();
         void show();
         
         void reset();
     private:
-        std::vector<std::string> modifiers;
     };
 }
 

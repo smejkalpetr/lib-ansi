@@ -19,7 +19,7 @@ void libANSI::Cursor::moveToPosition(int x, int y) {
 }
 
 void libANSI::Cursor::moveToColumn(int x) {
-    std::string code =  "\u001b[" +
+    std::string code =  "\033[" +
                         std::to_string(x) +
                         "G";
     

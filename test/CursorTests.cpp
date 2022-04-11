@@ -8,6 +8,7 @@
 #include "CursorTests.hpp"
 
 void CursorTests() {
+    std::cout << "CURSOR MODULE TESTING:" << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(2));
     
     libANSI::Terminal t;

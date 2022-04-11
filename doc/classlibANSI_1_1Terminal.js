@@ -1,6 +1,6 @@
 var classlibANSI_1_1Terminal =
 [
-    [ "backgroundColor", "classlibANSI_1_1Terminal.html#aa413dff678b40a6a09c340353cc986c4", null ],
+    [ "backgroundBrightColor", "classlibANSI_1_1Terminal.html#a8e9e2202238fea61efe244f1d5840183", null ],
     [ "backgroundColor", "classlibANSI_1_1Terminal.html#a246ee4b9583a6f133d35f8d642129f78", null ],
     [ "backgroundColor", "classlibANSI_1_1Terminal.html#a2133b7d67fddd6887abe5aea68151a12", null ],
     [ "clearScreen", "classlibANSI_1_1Terminal.html#a146ede800a1bd310362943d0e169f23d", null ],

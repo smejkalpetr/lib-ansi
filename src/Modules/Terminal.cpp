@@ -16,12 +16,11 @@ void libANSI::Terminal::cookedMode() {
 }
 
 void libANSI::Terminal::resize(int w, int h) {
-    std::string code =  std::string("\u001b[8;") +
+    std::string code =  "\u001b[8;" +
                         std::to_string(h) +
-                        std::string(";") +
+                        ";" +
                         std::to_string(w) +
-                        std::string("t");
-    
+                        "t";
     std::cout << code;
 }
 
@@ -47,28 +46,25 @@ void libANSI::Terminal::clearScreenToEnd() {
 
 void libANSI::Terminal::backgroundColor(COLOR color) {
     std::string code =  "\033[" +
-                        std::to_string(color + 10) +
+                        std::to_string(color) +
                         "m";
-    
     std::cout << code;
     
     this->clearScreen();
 }
 
-void libANSI::Terminal::backgroundColor(BRIGHT_COLOR color) {
+void libANSI::Terminal::backgroundBrightColor(COLOR bright_color) {
     std::string code =  "\033[" +
-                        std::to_string(color + 10) +
+                        std::to_string(bright_color) +
                         ";1m";
-    
     std::cout << code;
     this->clearScreen();
 }
 
 void libANSI::Terminal::backgroundColor(int color_code) {
-    std::string code =  "u001b[38;5;" +
+    std::string code =  "/033[38;5;" +
                         std::to_string(color_code) +
                         "m";
-    
     std::cout << code;
     this->clearScreen();
 }

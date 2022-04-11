@@ -9,7 +9,25 @@
 #define Color_h
 
 enum COLOR {
-  BLACK = 30, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, DEFAULT = 0
+    DEFAULT = 0,
+    
+    FG_BLACK = 30,
+    FG_RED,
+    FG_GREEN,
+    FG_YELLOW,
+    FG_BLUE,
+    FG_MAGENTA,
+    FG_CYAN,
+    FG_WHITE,
+    
+    BG_BLACK = 40,
+    BG_RED,
+    BG_GREEN,
+    BG_YELLOW,
+    BG_BLUE,
+    BG_MAGENTA,
+    BG_CYAN,
+    BG_WHITE
 };
 
 #endif /* Color_h */

@@ -8,5 +8,6 @@
 #include "TextTests.hpp"
 
 void TextTests() {
+    std::cout << "TEXT MODULE TESTING:" << std::endl;
     std::cout << "hello from TextTests func..." << std::endl;
 }

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cyan_141',['CYAN',['../Color_8hpp.html#af90824509586333cf45ce757d2711ce3aafe71cad474c15ce63b300c470eef8cc',1,'Color.hpp']]]
+  ['default_139',['DEFAULT',['../Color_8hpp.html#af90824509586333cf45ce757d2711ce3a88ec7d5086d2469ba843c7fcceade8a6',1,'Color.hpp']]]
 ];

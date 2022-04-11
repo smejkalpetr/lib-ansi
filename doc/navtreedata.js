@@ -50,7 +50,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"BrightColor_8hpp.html"
+"Color_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -12,7 +12,6 @@
 #include <stdlib.h>
 
 #include "../Enums/Color.hpp"
-#include "../Enums/BrightColor.hpp"
 
 namespace libANSI {
     class Terminal {
@@ -29,7 +28,7 @@ namespace libANSI {
         void clearScreenToEnd();
         
         void backgroundColor(COLOR color);
-        void backgroundColor(BRIGHT_COLOR color);
+        void backgroundBrightColor(COLOR bright_color);
         void backgroundColor(int color_code);
         
         void reset();

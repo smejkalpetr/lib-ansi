@@ -117,32 +117,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3b59390608eb906954b9842f0fbe317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a246ee4b9583a6f133d35f8d642129f78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibANSI_1_1Terminal.html#a246ee4b9583a6f133d35f8d642129f78">backgroundColor</a> (<a class="el" href="Color_8hpp.html#af90824509586333cf45ce757d2711ce3">COLOR</a> color)</td></tr>
 <tr class="separator:a246ee4b9583a6f133d35f8d642129f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa413dff678b40a6a09c340353cc986c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibANSI_1_1Terminal.html#aa413dff678b40a6a09c340353cc986c4">backgroundColor</a> (<a class="el" href="BrightColor_8hpp.html#a4f7cabb52a79788366cbaaf65986b3d7">BRIGHT_COLOR</a> color)</td></tr>
-<tr class="separator:aa413dff678b40a6a09c340353cc986c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9e2202238fea61efe244f1d5840183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibANSI_1_1Terminal.html#a8e9e2202238fea61efe244f1d5840183">backgroundBrightColor</a> (<a class="el" href="Color_8hpp.html#af90824509586333cf45ce757d2711ce3">COLOR</a> bright_color)</td></tr>
+<tr class="separator:a8e9e2202238fea61efe244f1d5840183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2133b7d67fddd6887abe5aea68151a12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibANSI_1_1Terminal.html#a2133b7d67fddd6887abe5aea68151a12">backgroundColor</a> (int color_code)</td></tr>
 <tr class="separator:a2133b7d67fddd6887abe5aea68151a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a563ec730dcb1c4d6af126ce41a507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlibANSI_1_1Terminal.html#a90a563ec730dcb1c4d6af126ce41a507">reset</a> ()</td></tr>
 <tr class="separator:a90a563ec730dcb1c4d6af126ce41a507"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa413dff678b40a6a09c340353cc986c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa413dff678b40a6a09c340353cc986c4">&#9670;&nbsp;</a></span>backgroundColor() <span class="overload">[1/3]</span></h2>
+<a id="a8e9e2202238fea61efe244f1d5840183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9e2202238fea61efe244f1d5840183">&#9670;&nbsp;</a></span>backgroundBrightColor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void libANSI::Terminal::backgroundColor </td>
+          <td class="memname">void libANSI::Terminal::backgroundBrightColor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="BrightColor_8hpp.html#a4f7cabb52a79788366cbaaf65986b3d7">BRIGHT_COLOR</a>&#160;</td>
-          <td class="paramname"><em>color</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="Color_8hpp.html#af90824509586333cf45ce757d2711ce3">COLOR</a>&#160;</td>
+          <td class="paramname"><em>bright_color</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                        {</div>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                              {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::string code =  <span class="stringliteral">&quot;\033[&quot;</span> +</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        std::to_string(color + 10) +</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        std::to_string(bright_color) +</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="stringliteral">&quot;;1m&quot;</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::cout &lt;&lt; code;</div>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a246ee4b9583a6f133d35f8d642129f78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a246ee4b9583a6f133d35f8d642129f78">&#9670;&nbsp;</a></span>backgroundColor() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a246ee4b9583a6f133d35f8d642129f78">&#9670;&nbsp;</a></span>backgroundColor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +169,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                 {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::string code =  <span class="stringliteral">&quot;\033[&quot;</span> +</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        std::to_string(color + 10) +</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        std::to_string(color) +</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        <span class="stringliteral">&quot;m&quot;</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::cout &lt;&lt; code;</div>
@@ -180,7 +180,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2133b7d67fddd6887abe5aea68151a12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2133b7d67fddd6887abe5aea68151a12">&#9670;&nbsp;</a></span>backgroundColor() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2133b7d67fddd6887abe5aea68151a12">&#9670;&nbsp;</a></span>backgroundColor() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +412,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelibANSI.html">libANSI</a></li><li class="navelem"><a class="el" href="classlibANSI_1_1Terminal.html">Terminal</a></li>
-    <li class="footer">Generated on Mon Apr 11 2022 21:11:19 for libANSI by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Apr 11 2022 22:42:53 for libANSI by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
