@@ -6,4 +6,8 @@ digraph "src/Modules/Cursor.hpp"
   Node1 [label="src/Modules/Cursor.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="src/Modules/Cursor.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Cursor_8cpp.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/Modules/Text.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Text_8hpp.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/Modules/Text.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Text_8cpp.html",tooltip=" "];
 }

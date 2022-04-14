@@ -12,7 +12,7 @@ void libANSI::Terminal::rawMode() {
 }
 
 void libANSI::Terminal::cookedMode() {
-    system("stty cooked");
+    std::system("stty cooked");
 }
 
 void libANSI::Terminal::resize(int w, int h) {
@@ -49,7 +49,6 @@ void libANSI::Terminal::backgroundColor(COLOR color) {
                         std::to_string(color) +
                         "m";
     std::cout << code;
-    
     this->clearScreen();
 }
 

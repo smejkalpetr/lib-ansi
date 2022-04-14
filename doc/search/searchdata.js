@@ -5,9 +5,8 @@ var indexSectionsWithContent =
   2: "l",
   3: "ct",
   4: "bchmprsu",
-  5: "m",
-  6: "c",
-  7: "bdf"
+  5: "c",
+  6: "bdf"
 };
 
 var indexSectionNames =
@@ -17,9 +16,8 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "variables",
-  6: "enums",
-  7: "enumvalues"
+  5: "enums",
+  6: "enumvalues"
 };
 
 var indexSectionLabels =
@@ -29,8 +27,7 @@ var indexSectionLabels =
   2: "Namespaces",
   3: "Files",
   4: "Functions",
-  5: "Variables",
-  6: "Enumerations",
-  7: "Enumerator"
+  5: "Enumerations",
+  6: "Enumerator"
 };
 

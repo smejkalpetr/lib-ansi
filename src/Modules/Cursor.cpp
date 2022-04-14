@@ -9,9 +9,9 @@
 
 void libANSI::Cursor::moveToPosition(int x, int y) {
     std::string code =  "\033[" +
-                        std::to_string(y) +
-                        ";" +
                         std::to_string(x) +
+                        ";" +
+                        std::to_string(y) +
                         "H";
 
     std::cout << code;

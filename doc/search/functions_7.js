@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['underline_128',['underline',['../classlibANSI_1_1Text.html#a1bf4975313c9f4f2cac55289108a346e',1,'libANSI::Text']]]
+  ['underline_127',['underline',['../classlibANSI_1_1Text.html#a3b06b73b27d4cd0331d4056ae48d52f1',1,'libANSI::Text']]]
 ];

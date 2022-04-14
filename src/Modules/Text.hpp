@@ -42,13 +42,15 @@ namespace libANSI {
         void underline(bool is_turned_on = true);
         void blink(bool is_turned_on = true);
         void crossedOut(bool is_turned_on = true);
-        void reversed(bool is_turned_on = true);
+        void reversedColors(bool is_turned_on = true);
         
         void hide();
         void show();
         
         void reset();
     private:
+        std::vector<std::string> modifiers;
+        void resetAfterPrint();
     };
 }
 

@@ -11,7 +11,7 @@ var searchData=
   ['color_2ehpp_22',['Color.hpp',['../Color_8hpp.html',1,'']]],
   ['colorreset_23',['colorReset',['../classlibANSI_1_1Text.html#a565f432da50cad55db530b4d7b836656',1,'libANSI::Text']]],
   ['cookedmode_24',['cookedMode',['../classlibANSI_1_1Terminal.html#a55963a4f24f008cef6401a3d5b9083f2',1,'libANSI::Terminal']]],
-  ['crossedout_25',['crossedOut',['../classlibANSI_1_1Text.html#a4f57c78d5ca2900956fffd5f55fc98dc',1,'libANSI::Text']]],
+  ['crossedout_25',['crossedOut',['../classlibANSI_1_1Text.html#a71ab4ec6c087140b134e3c578771c1f7',1,'libANSI::Text']]],
   ['cursor_26',['Cursor',['../classlibANSI_1_1Cursor.html',1,'libANSI']]],
   ['cursor_2ecpp_27',['Cursor.cpp',['../Cursor_8cpp.html',1,'']]],
   ['cursor_2ehpp_28',['Cursor.hpp',['../Cursor_8hpp.html',1,'']]]

@@ -11,7 +11,7 @@ var searchData=
   ['bg_5fred_8',['BG_RED',['../Color_8hpp.html#af90824509586333cf45ce757d2711ce3a2ff597ee3a5eafbc85d4762a6fa5dd91',1,'Color.hpp']]],
   ['bg_5fwhite_9',['BG_WHITE',['../Color_8hpp.html#af90824509586333cf45ce757d2711ce3aecc0ff952194921d53813a10bfe2b4d6',1,'Color.hpp']]],
   ['bg_5fyellow_10',['BG_YELLOW',['../Color_8hpp.html#af90824509586333cf45ce757d2711ce3adc16c75fa1b6ca460dae363706307c43',1,'Color.hpp']]],
-  ['blink_11',['blink',['../classlibANSI_1_1Text.html#a2613150427a92368286851b081f2ffd0',1,'libANSI::Text']]],
-  ['bold_12',['bold',['../classlibANSI_1_1Text.html#af10a42f898aeac6899d36c077b1f2831',1,'libANSI::Text']]],
+  ['blink_11',['blink',['../classlibANSI_1_1Text.html#aa7d573b236905603e7b6add44a6447ce',1,'libANSI::Text']]],
+  ['bold_12',['bold',['../classlibANSI_1_1Text.html#adfd7b07c5f118af40de83e3745db2fb8',1,'libANSI::Text']]],
   ['brightcolor_13',['brightColor',['../classlibANSI_1_1Text.html#a947d092ffb95ccea6be983afe2af4373',1,'libANSI::Text']]]
 ];

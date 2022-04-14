@@ -13,5 +13,9 @@ digraph "src/Modules/Text.cpp"
   Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node5 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="../Enums/Color.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Color_8hpp.html",tooltip=" "];
+  Node6 [label="Cursor.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Cursor_8hpp.html",tooltip=" "];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="../Enums/Color.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$Color_8hpp.html",tooltip=" "];
 }
