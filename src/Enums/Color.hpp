@@ -8,6 +8,10 @@
 #ifndef Color_h
 #define Color_h
 
+/**
+ * @brief Contains all basic available colors.
+ * 
+ */
 enum COLOR {
     DEFAULT = 0,
     

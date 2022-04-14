@@ -23,11 +23,11 @@ void TextTests() {
     t.backgroundColor(COLOR::BG_YELLOW);
     
     t.print("Hello World!");
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    std::this_thread::sleep_for(std::chrono::seconds(2));
     t.colorReset();
     
     std::cout << std::endl << "Let's now try using different fonts..." << std::endl;
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    std::this_thread::sleep_for(std::chrono::seconds(2));
     
     t.bold();
     t.print("bold ");
@@ -61,19 +61,19 @@ void TextTests() {
     t.reversedColors();
     
     t.print("Hello World!");
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    std::this_thread::sleep_for(std::chrono::seconds(2));
     
     std::cout << "\nReversed colors: ";
     
     t.reversedColors();
     t.print("Hello World!");
     std::cout << std::endl;
-    std::this_thread::sleep_for(std::chrono::seconds(1));
+    std::this_thread::sleep_for(std::chrono::seconds(2));
     
     
     std::cout << "You can also print text at given coords (15,50):" << std::endl;
     
-    t.printOnPosition(15, 50, "Hello from (30,30).");
+    t.printOnPosition(15, 50, "Hello from (15,50).");
     
     std::cout << std::endl;
     

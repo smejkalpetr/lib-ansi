@@ -15,8 +15,8 @@
 #include "TextTests.hpp"
 
 int main(int argc, const char * argv[]) {
-//    TerminalTests();
-//    CursorTests();
+    TerminalTests();
+    CursorTests();
     TextTests();
     
     return 0;
