@@ -6,5 +6,5 @@ digraph "libANSI::Text::printOnPosition"
   rankdir="LR";
   Node1 [label="libANSI::Text::printOnPosition",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="libANSI::Cursor::moveToPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibANSI_1_1Cursor.html#ac19db47c8b13cbbd73798324c6fd209f",tooltip=" "];
+  Node2 [label="libANSI::Cursor::moveToPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibANSI_1_1Cursor.html#ac19db47c8b13cbbd73798324c6fd209f",tooltip="Moves cursor to given coordinations [x,y]."];
 }

@@ -19,8 +19,10 @@ var classlibANSI_1_1Text =
     [ "print", "classlibANSI_1_1Text.html#aed78c05c67a151f2be6199fbeff10554", null ],
     [ "printOnPosition", "classlibANSI_1_1Text.html#aec6a3a0eab38ca3d541b2da94c5d13c1", null ],
     [ "reset", "classlibANSI_1_1Text.html#a80af1ac0c68d1525b16dc5341faea005", null ],
-    [ "reversed", "classlibANSI_1_1Text.html#a1c9ec847fd193e01c05cfb38b4fbdbab", null ],
+    [ "resetAfterPrint", "classlibANSI_1_1Text.html#a2a1ea32fd21262de14bb6530498bec4f", null ],
+    [ "reversedColors", "classlibANSI_1_1Text.html#ad09f61d02da8da689fc03bcfdf171728", null ],
     [ "show", "classlibANSI_1_1Text.html#a43907e9535cd976771cece02c768666d", null ],
     [ "standard", "classlibANSI_1_1Text.html#a085ab11344d9d9dd6b9cee8a7a01a574", null ],
-    [ "underline", "classlibANSI_1_1Text.html#a3b06b73b27d4cd0331d4056ae48d52f1", null ]
+    [ "underline", "classlibANSI_1_1Text.html#a3b06b73b27d4cd0331d4056ae48d52f1", null ],
+    [ "modifiers", "classlibANSI_1_1Text.html#afcae22d77b025350be7aaa74f55744a0", null ]
 ];

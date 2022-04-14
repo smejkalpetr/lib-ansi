@@ -13,7 +13,15 @@
 
 #include "../Enums/Color.hpp"
 
+/**
+ * @brief This namespace contains all modules of the library.
+ * 
+ */
 namespace libANSI {
+    /**
+     * @brief This module provides a simple way to modify the terminal window.
+     * 
+     */
     class Terminal {
     public:
         /**

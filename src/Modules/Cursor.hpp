@@ -12,10 +12,14 @@
 #include <string>
 
 /**
- * @brief This module allows easy cursor manipulation.
+ * @brief This namespace contains all modules of the library.
  * 
  */
 namespace libANSI {
+    /**
+     * @brief This module allows easy cursor manipulation.
+     * 
+     */
     class Cursor {
     public:
         /**

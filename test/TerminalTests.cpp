@@ -56,7 +56,7 @@ void TerminalTests() {
     std::this_thread::sleep_for(std::chrono::seconds(3));
     
     t.reset();
-    std::cout << "The termnial window has been reseted." << std::endl;
+    std::cout << "The termnial window has been reset." << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(3));
     // #[------------------------------------------------------------------------------------]# //
 }
