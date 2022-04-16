@@ -13,6 +13,10 @@
 
 #include "../include/libANSI.hpp"
 
+/**
+ * @brief Test suite for Text module.
+ * 
+ */
 void TextTests();
 
 #endif /* TextTests_h */

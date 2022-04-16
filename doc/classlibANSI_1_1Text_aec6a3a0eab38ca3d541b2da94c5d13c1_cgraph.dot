@@ -4,7 +4,7 @@ digraph "libANSI::Text::printOnPosition"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="libANSI::Text::printOnPosition",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [label="libANSI::Text::printOnPosition",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Prints given text starting with cursor on postion [x,y]."];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="libANSI::Cursor::moveToPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlibANSI_1_1Cursor.html#ac19db47c8b13cbbd73798324c6fd209f",tooltip="Moves cursor to given coordinations [x,y]."];
 }

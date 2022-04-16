@@ -13,6 +13,10 @@
 
 #include "../include/libANSI.hpp"
 
+/**
+ * @brief Test suite for Terminal module.
+ * 
+ */
 void TerminalTests();
 
 #endif /* TerminalTests_h */

@@ -13,6 +13,10 @@
 
 #include "../include/libANSI.hpp"
 
+/**
+ * @brief Test suite for Cursor module.
+ * 
+ */
 void CursorTests();
 
 #endif /* CursorTests_h */
