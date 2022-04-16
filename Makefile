@@ -5,13 +5,13 @@ LIB_STATIC_NAME = ANSI_static
 
 BIN = ./bin/
 BIN_TEST = ./bin/test/
-SRC = ./src/
+SRC = ./include/src/
 DOC = ./doc/
 TEST = ./test/
 INCLUDE = ./include/
 OBJECTS_LIB = ./bin/objects/lib/
 OBJECTS_TEST =  ./bin/objects/test/
-MODUELS = ./src/Modules/
+MODUELS = ./include/src/Modules/
 
 all: compile test doc
 

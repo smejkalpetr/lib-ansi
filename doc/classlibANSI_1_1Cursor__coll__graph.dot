@@ -1,7 +1,0 @@
-digraph "libANSI::Cursor"
-{
- // LATEX_PDF_SIZE
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{libANSI::Cursor\n||+ moveToPosition()\l+ moveToColumn()\l+ moveUp()\l+ moveDown()\l+ moveRight()\l+ moveLeft()\l+ moveUpByX()\l+ moveDownByX()\l+ moveRightByX()\l+ moveLeftByX()\land 9 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This module allows easy cursor manipulation."];
-}

@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1DBAA00A27FF1E5C00E27F90 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DBAA00927FF1E5C00E27F90 /* main.cpp */; };
-		1DBAA01727FF1F4200E27F90 /* Terminal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DBAA01527FF1F4200E27F90 /* Terminal.cpp */; };
-		1DBAA01A27FF1F5200E27F90 /* Cursor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DBAA01827FF1F5200E27F90 /* Cursor.cpp */; };
-		1DBAA01D27FF1F5A00E27F90 /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DBAA01B27FF1F5A00E27F90 /* Text.cpp */; };
 		1DBAA01F27FF205D00E27F90 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 1DBAA01E27FF205D00E27F90 /* Makefile */; };
 		1DDB3B7B2800E40E0098129D /* TerminalTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB3B792800E40E0098129D /* TerminalTests.cpp */; };
 		1DDB3B7D2800E4350098129D /* CursorTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB3B7C2800E4350098129D /* CursorTests.cpp */; };
@@ -33,13 +30,6 @@
 		1DBAA00627FF1E5C00E27F90 /* libANSI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libANSI; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBAA00927FF1E5C00E27F90 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1DBAA01027FF1ED000E27F90 /* libANSI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = libANSI.hpp; sourceTree = "<group>"; };
-		1DBAA01327FF1F2A00E27F90 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Color.hpp; sourceTree = "<group>"; };
-		1DBAA01527FF1F4200E27F90 /* Terminal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Terminal.cpp; sourceTree = "<group>"; };
-		1DBAA01627FF1F4200E27F90 /* Terminal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Terminal.hpp; sourceTree = "<group>"; };
-		1DBAA01827FF1F5200E27F90 /* Cursor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cursor.cpp; sourceTree = "<group>"; };
-		1DBAA01927FF1F5200E27F90 /* Cursor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cursor.hpp; sourceTree = "<group>"; };
-		1DBAA01B27FF1F5A00E27F90 /* Text.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Text.cpp; sourceTree = "<group>"; };
-		1DBAA01C27FF1F5A00E27F90 /* Text.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Text.hpp; sourceTree = "<group>"; };
 		1DBAA01E27FF205D00E27F90 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		1DDB3B792800E40E0098129D /* TerminalTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TerminalTests.cpp; sourceTree = "<group>"; };
 		1DDB3B7C2800E4350098129D /* CursorTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CursorTests.cpp; sourceTree = "<group>"; };
@@ -47,6 +37,13 @@
 		1DDB3B802800E61A0098129D /* TerminalTests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TerminalTests.hpp; sourceTree = "<group>"; };
 		1DDB3B812800E66B0098129D /* CursorTests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CursorTests.hpp; sourceTree = "<group>"; };
 		1DDB3B822800E6770098129D /* TextTests.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextTests.hpp; sourceTree = "<group>"; };
+		1DE7132D280AEDB300E990F5 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Color.hpp; sourceTree = "<group>"; };
+		1DE7132F280AEDB300E990F5 /* Cursor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cursor.hpp; sourceTree = "<group>"; };
+		1DE71330280AEDB300E990F5 /* Text.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Text.cpp; sourceTree = "<group>"; };
+		1DE71331280AEDB300E990F5 /* Terminal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Terminal.hpp; sourceTree = "<group>"; };
+		1DE71332280AEDB300E990F5 /* Terminal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Terminal.cpp; sourceTree = "<group>"; };
+		1DE71333280AEDB300E990F5 /* Cursor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cursor.cpp; sourceTree = "<group>"; };
+		1DE71334280AEDB300E990F5 /* Text.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Text.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +62,7 @@
 			children = (
 				1DBAA01E27FF205D00E27F90 /* Makefile */,
 				1DDB3B762800E10D0098129D /* include */,
-				1DDB3B732800E0C70098129D /* src */,
 				1DDB3B742800E0E00098129D /* test */,
-				1DDB3B752800E0E60098129D /* doc */,
 				1DDB3B772800E14A0098129D /* bin */,
 				1DBAA00727FF1E5C00E27F90 /* Products */,
 			);
@@ -79,36 +74,6 @@
 				1DBAA00627FF1E5C00E27F90 /* libANSI */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1DBAA01127FF1F0B00E27F90 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				1DBAA01627FF1F4200E27F90 /* Terminal.hpp */,
-				1DBAA01527FF1F4200E27F90 /* Terminal.cpp */,
-				1DBAA01927FF1F5200E27F90 /* Cursor.hpp */,
-				1DBAA01827FF1F5200E27F90 /* Cursor.cpp */,
-				1DBAA01C27FF1F5A00E27F90 /* Text.hpp */,
-				1DBAA01B27FF1F5A00E27F90 /* Text.cpp */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		1DBAA01227FF1F1D00E27F90 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				1DBAA01327FF1F2A00E27F90 /* Color.hpp */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		1DDB3B732800E0C70098129D /* src */ = {
-			isa = PBXGroup;
-			children = (
-				1DBAA01227FF1F1D00E27F90 /* Enums */,
-				1DBAA01127FF1F0B00E27F90 /* Modules */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 		1DDB3B742800E0E00098129D /* test */ = {
@@ -125,16 +90,10 @@
 			path = test;
 			sourceTree = "<group>";
 		};
-		1DDB3B752800E0E60098129D /* doc */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = doc;
-			sourceTree = "<group>";
-		};
 		1DDB3B762800E10D0098129D /* include */ = {
 			isa = PBXGroup;
 			children = (
+				1DE7132B280AEDB300E990F5 /* src */,
 				1DBAA01027FF1ED000E27F90 /* libANSI.hpp */,
 			);
 			path = include;
@@ -153,6 +112,36 @@
 			children = (
 			);
 			path = objects;
+			sourceTree = "<group>";
+		};
+		1DE7132B280AEDB300E990F5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1DE7132C280AEDB300E990F5 /* Enums */,
+				1DE7132E280AEDB300E990F5 /* Modules */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1DE7132C280AEDB300E990F5 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1DE7132D280AEDB300E990F5 /* Color.hpp */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1DE7132E280AEDB300E990F5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1DE7132F280AEDB300E990F5 /* Cursor.hpp */,
+				1DE71330280AEDB300E990F5 /* Text.cpp */,
+				1DE71331280AEDB300E990F5 /* Terminal.hpp */,
+				1DE71332280AEDB300E990F5 /* Terminal.cpp */,
+				1DE71333280AEDB300E990F5 /* Cursor.cpp */,
+				1DE71334280AEDB300E990F5 /* Text.hpp */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,12 +203,9 @@
 			files = (
 				1DBAA01F27FF205D00E27F90 /* Makefile in Sources */,
 				1DBAA00A27FF1E5C00E27F90 /* main.cpp in Sources */,
-				1DBAA01A27FF1F5200E27F90 /* Cursor.cpp in Sources */,
 				1DDB3B7B2800E40E0098129D /* TerminalTests.cpp in Sources */,
-				1DBAA01D27FF1F5A00E27F90 /* Text.cpp in Sources */,
 				1DDB3B7D2800E4350098129D /* CursorTests.cpp in Sources */,
 				1DDB3B7F2800E4410098129D /* TextTests.cpp in Sources */,
-				1DBAA01727FF1F4200E27F90 /* Terminal.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

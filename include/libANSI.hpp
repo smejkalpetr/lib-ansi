@@ -35,8 +35,8 @@
  *  ####--------------------SETUP--------------------####
  *
  *  How to include the library in your project:
- *  --> The library is supposed to be statcally linked to your project, which means that at first you need to run the 'make compile' command, which will create a './bin/static_lib_arch/libANSI_static.a'
- *     archive (which are basically all object files packed in one archive). Then you will need to include this header file in your code and modify your Makefile so that the linker can
+ *  --> The library is supposed to be statcally linked to your project, which means that at first you need to run the 'make compile' command, which will create a './include/libANSI_static.a'
+ *     archive (which are basically all object files packed in one archive). Then you will need to copy the whole include directory in your code and modify your Makefile so that the linker can
  *     find the archive. It can be done by adding:  -L$(dir_where_the_lib_is_stored) -l$(lib_name_without_prefix). Note that the archive must start with 'lib' in its name.
  *
  *     You can check out the provided Makefile and its 'test' target where all that I described above is shown as an example.
@@ -58,8 +58,8 @@
  * @copyright Petr Šmejkal (c) 2022
  * 
  */
-#include "../src/Modules/Terminal.hpp"
-#include "../src/Modules/Cursor.hpp"
-#include "../src/Modules/Text.hpp"
+#include "./src/Modules/Terminal.hpp"
+#include "./src/Modules/Cursor.hpp"
+#include "./src/Modules/Text.hpp"
 
 #endif /* libANSI_h */
