@@ -14,6 +14,9 @@
  *
  *  This is a small library that makes using of ANSI codes easier. ANSI codes will allow you cusomize your terminal - e.g. resize the window, change background color, change font, etc.
  *
+ *  The project was created for me to try developing a library, to more understand how library is linked and mainly just for fun.
+ *  I CAN'T GUARANTEE CORRECT BEHAVIOUR IN ALL SCENARIOS. FEEL FREE TO MODIFY ANY CODE.
+ *
  *  There are three modules that make this library - Terminal, Cursor and Text:
  *
  *  --> *Terminal* module facilitates functions that modify the terminal as a whole - like switching the terminal into raw mode, resizing the window, clearing the window, etc.
@@ -26,6 +29,8 @@
  *  TO FIND OUT MORE ABOUT THE LIBRARY'S FUNCTIONALITY CHECK OUT THE DOCUMENTATION AT ./doc
  *
  *  ####--------------------------------------------------####
+ *
+ *  The library was tested on macOS Monterey (macOS 12.1), you may experience some issues on other platforms.
  *
  *  ####--------------------SETUP--------------------####
  *
